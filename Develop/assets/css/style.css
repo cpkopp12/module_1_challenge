@@ -86,69 +86,22 @@ p {
     background-color: #2589bd;
 }
 
-/*
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-*/
+/* Creating different class for each benifit led to a bunch of repeating code,
+so I reduced it to one class called by each new benifit in the html file */
 
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/*
-.benefit-lead h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-*/
+/* all of the heading and image styles were also the same for each benefit type,
+so I reorganized the code so that these selectors apply to all of them*/
 
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-/*
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-*/
 
 .benefit img {
     display: block;
@@ -156,34 +109,9 @@ p {
     max-width: 150px;
 }
 
-/*
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-*/
+/* following the same logic as the .benefit selector above, I eliminated the repeating 
+code in the content selectors by creating one content-type class*/
 
 .content-type {
     margin-bottom: 20px;
@@ -194,45 +122,22 @@ p {
     color: #ffffff;
 }
 
-/*
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-*/
+/* All of the images and headings in the content section had the same styles,
+with the exception of the alternating float value. Because the .float-left and
+.float-right classes were already written and called in the html file, these two
+selectors cover the rest of the styling for the section */
 
 .content-type img {
     max-height: 200px;
 }
 
-/*
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-*/
 
 .content-type h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
+
 
 .footer {
     padding: 30px;
